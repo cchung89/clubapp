@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import club.polyappdev.clubapp.AllViewable.LoginActivity;
 import club.polyappdev.clubapp.MySetting;
 import club.polyappdev.clubapp.R;
-import club.polyappdev.clubapp.StudentViewable.MainActivity;
 
 public class ClubMainActivity extends AppCompatActivity {
 

@@ -2,10 +2,9 @@ package club.polyappdev.clubapp;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.provider.CalendarContract;
 import android.util.DisplayMetrics;
 
-/**
+/*
  * Created by USER on 4/15/2017.
  */
 
