@@ -15,7 +15,6 @@ public class Notification {
     public Date getDate() {
         return date;
     }
-
     public void setDate(Date date) {
         this.date = date;
     }
@@ -23,7 +22,6 @@ public class Notification {
     public Event getEvent() {
         return event;
     }
-
     public void setEvent(Event event) {
         this.event = event;
     }
@@ -31,7 +29,6 @@ public class Notification {
     public Club getClub() {
         return club;
     }
-
     public void setClub(Club club) {
         this.club = club;
     }
@@ -39,7 +36,6 @@ public class Notification {
     public String getContent() {
         return content;
     }
-
     public void setContent(String content) {
         this.content = content;
     }

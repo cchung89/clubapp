@@ -20,7 +20,6 @@ public class User {
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -28,7 +27,6 @@ public class User {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -36,7 +34,6 @@ public class User {
     public String getImage() {
         return image;
     }
-
     public void setImage(String image) {
         this.image = image;
     }
@@ -44,7 +41,6 @@ public class User {
     public String getMajor() {
         return major;
     }
-
     public void setMajor(String major) {
         this.major = major;
     }
@@ -52,7 +48,6 @@ public class User {
     public List<Notification> getNotificationList() {
         return notificationList;
     }
-
     public void setNotificationList(List<Notification> notificationList) {
         this.notificationList = notificationList;
     }
@@ -60,7 +55,6 @@ public class User {
     public List<Subscription> getSubscriptionList() {
         return subscriptionList;
     }
-
     public void setSubscriptionList(List<Subscription> subscriptionList) {
         this.subscriptionList = subscriptionList;
     }

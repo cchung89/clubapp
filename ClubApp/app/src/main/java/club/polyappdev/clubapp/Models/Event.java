@@ -1,11 +1,7 @@
 package club.polyappdev.clubapp.Models;
 
 import android.location.Location;
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +21,6 @@ public class Event {
     public Club getClub() {
         return club;
     }
-
     public void setClub(Club club) {
         this.club = club;
         this.clubName = club.getName();// so I can parcel it
@@ -38,13 +33,11 @@ public class Event {
     public String getStringLoc() {
         return stringLoc;
     }
-
     public void setStringLoc(String stringLoc) {
         this.stringLoc = stringLoc;
     }
 
     public String getStringDate() {return stringDate; }
-
     public void setStringDate(String stringDate) { this.stringDate = stringDate; }
 
     private String title;
@@ -55,7 +48,6 @@ public class Event {
     public Location getLocation() {
         return location;
     }
-
     public void setLocation(Location location) {
         this.location = location;
     }
@@ -63,7 +55,6 @@ public class Event {
     public Date getDate() {
         return date;
     }
-
     public void setDate(Date date) {
         this.date = date;
     }
@@ -71,7 +62,6 @@ public class Event {
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
@@ -79,7 +69,6 @@ public class Event {
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -87,7 +76,6 @@ public class Event {
     public String getPhoto() {
         return photo;
     }
-
     public void setPhoto(String photo) {
         this.photo = photo;
     }
@@ -95,7 +83,6 @@ public class Event {
     public List<String> getKeywords() {
         return keywords;
     }
-
     public void setKeywords(List<String> keywords) {
         this.keywords = keywords;
     }
@@ -103,7 +90,6 @@ public class Event {
     public boolean isFood() {
         return food;
     }
-
     public void setFood(boolean food) {
         this.food = food;
     }

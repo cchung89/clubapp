@@ -14,7 +14,6 @@ public class Subscription {
     public Club getClub() {
         return club;
     }
-
     public void setClub(Club club) {
         this.club = club;
     }
@@ -22,7 +21,6 @@ public class Subscription {
     public List<Event> getEvents() {
         return events;
     }
-
     public void setEvents(List<Event> events) {
         this.events = events;
     }
