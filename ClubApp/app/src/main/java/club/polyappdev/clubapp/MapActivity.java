@@ -97,13 +97,9 @@ public class MapActivity extends AppCompatActivity
                 .build();
 
         mGoogleApiClient.connect();
-
-
-
-
     }
 
-    /**
+    /*
      * Saves the state of the map when the activity is paused.
      */
     @Override
@@ -244,7 +240,7 @@ public class MapActivity extends AppCompatActivity
         }
     }
 
-    /**
+    /*
      * Handles the result of the request for location permissions.
      */
     @Override
@@ -264,7 +260,7 @@ public class MapActivity extends AppCompatActivity
         updateLocationUI();
     }
 
-    /**
+    /*
      * Prompts the user to select the current place from a list of likely places, and shows the
      * current place on the map - provided the user has granted location permission.
      */
@@ -317,7 +313,7 @@ public class MapActivity extends AppCompatActivity
         }
     }
 
-    /**
+    /*
      * Displays a form allowing the user to select a place from a list of likely places.
      */
     private void openPlacesDialog() {
@@ -351,5 +347,4 @@ public class MapActivity extends AppCompatActivity
                 .setItems(mLikelyPlaceNames, listener)
                 .show();
     }
-
 }

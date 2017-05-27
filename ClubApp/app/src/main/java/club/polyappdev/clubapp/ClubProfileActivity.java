@@ -1,12 +1,9 @@
 package club.polyappdev.clubapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.NavUtils;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -223,7 +220,8 @@ public class ClubProfileActivity extends AppCompatActivity {
         return ssb;
     }
 
-    /*  For onCreateView, hard coded examples are used until
+    /*
+     *  For onCreateView, hard coded examples are used until
      *  we can get the correct data from an online database.
      */
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -295,7 +293,7 @@ public class ClubProfileActivity extends AppCompatActivity {
         return view;
     }
 
-    /**
+    /*
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
