@@ -18,16 +18,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
 
@@ -38,11 +34,7 @@ import java.util.List;
 import club.polyappdev.clubapp.AllViewable.EventDetailActivity;
 import club.polyappdev.clubapp.Models.Club;
 import club.polyappdev.clubapp.Models.Event;
-import club.polyappdev.clubapp.StudentViewable.Subscribed;
 import club.polyappdev.clubapp.StudentViewable.subscriptionRowAdapter;
-
-import static club.polyappdev.clubapp.R.id.subscribedListView;
-import static java.security.AccessController.getContext;
 
 public class ClubProfileActivity extends AppCompatActivity {
 
@@ -120,26 +112,7 @@ public class ClubProfileActivity extends AppCompatActivity {
         sample.add(event2);
         sample.add(event3);
 
-        /*
-        List<Event> events = new ArrayList<>();
-
-        for (int k = 0; k < 4; k++) {
-            Event event = new Event();
-            event.setClub(test);
-            event.setDate(new Date());
-            //event.setLocation(new Location(Location.convert(d1, d2)));
-            event.setDescription("Weekly Overview");
-            event.setStringLoc("180-114");
-            event.setStringDate("4/22/2017");
-            event.setTitle("General Meeting");
-            event.setFood(false);
-            event.setKeywords(keywords);
-            events.add(event);
-        }
-        test.setEventList(events);
-        */
-
-        /* initializing views */
+        /* Initializing views for club profile */
         clubName = (TextView) findViewById(R.id.clubNameView);
         clubPhoto = (ImageView) findViewById(R.id.clubProfileImage);
         clubDescription = (TextView) findViewById(R.id.clubDescriptionView);
@@ -172,9 +145,7 @@ public class ClubProfileActivity extends AppCompatActivity {
         });
         // Inflate the layout for this fragment
 
-        //clubEvent = (ScrollView) findViewById(R.id.clubEventView);
-
-        /* setting views */
+        /* Setting views */
         clubName.setText(test.getName());
         clubDescription.setText(test.getDescription());
         clubEmail.setText(test.getEmail());
@@ -252,6 +223,9 @@ public class ClubProfileActivity extends AppCompatActivity {
         return ssb;
     }
 
+    /*  For onCreateView, hard coded examples are used until
+     *  we can get the correct data from an online database.
+     */
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Club club = new Club();
@@ -290,12 +264,6 @@ public class ClubProfileActivity extends AppCompatActivity {
         // the above is all testing code
         // the adapter is written assuming we are making a list of events from subscribed clubs
         // rather than a list of subscribed clubs
-
-//        for (Subscription sub : mSubscriptionList){ //FIXME this code should get subscriptions from database
-//            for (Online? evnt : sub.getEvents()){
-//                mEventList.add(evnt);
-//            }
-//        }
 
         View view = inflater.inflate(R.layout.fragment_subscribed, container, false);
         subscribedListView = (ListView) view.findViewById(R.id.subscribedListView);

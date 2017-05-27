@@ -20,7 +20,7 @@ import club.polyappdev.clubapp.Models.Notification;
 import club.polyappdev.clubapp.R;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * {@link Notifications.OnFragmentInteractionListener} interface
